@@ -74,7 +74,7 @@ function Hero() {
           transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
         >
           <Magnetic>
-            <a href="#work" className="explore-btn">
+            <a href="#experience" className="explore-btn">
               <span>Explore Works</span>
               <svg
                 width="20"

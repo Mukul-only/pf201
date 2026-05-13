@@ -2,6 +2,10 @@ import { motion } from "motion/react";
 import ProjectCard from "../ProjectCard";
 import "./CaseStudy.css";
 
+import shiftyImg from "../../assets/shifty.png";
+import rideonImg from "../../assets/Rideon.png";
+import rapidoImg from "../../assets/Rapido.png";
+
 function CaseStudy() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -63,7 +67,7 @@ function CaseStudy() {
           description="A mobile app for finding rooms and roommates - solving student accommodation in non-domicile states."
           tags="#B2C #RESEARCH #INTERFACE"
           legacy={false}
-          image="/src/assets/shifty.png"
+          image={shiftyImg}
           link="https://www.figma.com/design/fBLMpGK4iRSXoWzPCDFneX/Shifty-Case-study?node-id=0-1&t=8xOYCQuNHYXrjsUr-1"
         />
 
@@ -75,7 +79,7 @@ function CaseStudy() {
           description="Helping E-rickshaw drivers earn more and get loans without credit score"
           tags="#B2B #B2C #RESEARCH"
           legacy={false}
-          image="/src/assets/Rideon.png"
+          image={rideonImg}
           link="https://www.figma.com/design/yHhksChOCH04DKXjfDY5ay/E-Riksha-Dashboard-(Copy)?t=M2id3RALeav6Cd3u-0"
         />
 
@@ -87,7 +91,7 @@ function CaseStudy() {
           description="Integrating package delivery, subscriptions, and scheduled rides for a seamless transport experience."
           tags="#B2C #TRANSPORT #4.8★"
           legacy={false}
-          image="/src/assets/Rapido.png"
+          image={rapidoImg}
           link="https://www.figma.com/design/fV3nwx9z55cEWhleym8kQZ/Rapido-Portfolio?node-id=517-7445&t=JweqEa5zWBscQHAf-0"
         />
       </motion.div>
