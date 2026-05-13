@@ -29,34 +29,33 @@ function Hero() {
         </motion.div>
 
         <h1 className="hero-title">
-          <motion.span
+          <motion.span 
             className="title-greeting"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.6, duration: 0.8 }}
           >
-            Designing the
+            I engineer
           </motion.span>
           <br />
-          <motion.span
+          <motion.span 
             className="title-name"
             initial={{ scaleY: 0, opacity: 0 }}
             animate={{ scaleY: 1, opacity: 1 }}
             transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
           >
-            products
+            ideas
           </motion.span>
           <br />
-          <motion.span
+          <motion.span 
             className="title-role"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.8, duration: 0.8 }}
           >
-            that feel effortless.
+            to experiences.
           </motion.span>
         </h1>
-
         <motion.p
           className="hero-subtitle"
           initial={{ opacity: 0 }}
