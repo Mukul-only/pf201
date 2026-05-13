@@ -1,0 +1,77 @@
+.marquee-container {
+  width: 100vw;
+  overflow: hidden;
+  background: #080808;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  margin-top: 4rem;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee-scroll 40s linear infinite;
+  align-items: center;
+  width: max-content;
+}
+
+/* Pause on hover if desired, though optional */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #7b7f84;
+  letter-spacing: -0.5px;
+  transition: color 0.3s ease;
+}
+
+.marquee-item span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.marquee-item:hover {
+  color: #ffffff;
+}
+
+.marquee-dot {
+  width: 6px;
+  height: 6px;
+  background: #7b7f84;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 5rem; /* significant space on the right side of the dot */
+  transition: background 0.3s ease;
+}
+
+.marquee-item:hover .marquee-dot {
+  background: #ffffff;
+}
+
+.marquee-star {
+  color: #7b7f84;
+  transition: color 0.3s ease;
+}
+
+.marquee-item:hover .marquee-star {
+  color: #ffffff;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

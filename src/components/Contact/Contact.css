@@ -1,0 +1,166 @@
+.contact-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0 12rem;
+  position: relative;
+  z-index: 10;
+  background-color: var(--bg);
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  width: 100%;
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 64px;
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+}
+
+:root.light-mode .contact-card {
+  background: #f8f8f8;
+  border-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+}
+
+.contact-heading {
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  margin-bottom: 2rem;
+  max-width: 1000px;
+}
+
+.contact-desc {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin-bottom: 4rem;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-btn-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100px;
+  background: var(--text);
+  color: var(--bg);
+  height: 64px;
+  min-width: 240px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+:root.light-mode .contact-btn-wrapper {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+:root.light-mode .contact-btn-wrapper:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-slider {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.contact-btn-wrapper:hover .btn-slider {
+  transform: translateX(-50%);
+}
+
+.btn-panel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.btn-panel svg {
+  width: 20px;
+  height: 20px;
+}
+
+.inner-link {
+  color: var(--bg);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  padding: 0.5rem;
+}
+
+.inner-link:hover {
+  opacity: 0.6;
+}
+
+.inner-divider {
+  color: var(--bg);
+  opacity: 0.3;
+  font-weight: 400;
+}
+
+/* Remove old dropdown styles */
+.contact-btn-secondary {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  padding: 1.25rem 2rem;
+  border-radius: 100px;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.contact-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05);
+}
+
+:root.light-mode .contact-btn-secondary:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 5rem 2rem;
+    border-radius: 32px;
+  }
+  .contact-actions {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

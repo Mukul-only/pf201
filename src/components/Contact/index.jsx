@@ -1,0 +1,79 @@
+import { motion } from "motion/react";
+import Magnetic from "../Magnetic";
+import "./Contact.css";
+
+function Contact() {
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  return (
+    <section className="contact-section" id="contact">
+      <div className="contact-container">
+        <motion.div
+          className="contact-card"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <h2 className="contact-heading">
+            Let's build the
+            <br />
+            next big thing.
+          </h2>
+
+          <p className="contact-desc">
+            Whether you're a startup looking to launch or an enterprise aiming
+            to scale, I'm here to help you design products that matter.
+          </p>
+
+          <div className="contact-actions">
+            <Magnetic>
+              <div className="contact-btn-wrapper">
+                <div className="btn-slider">
+                  <div className="btn-panel">
+                    <span>Get in Touch</span>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <div className="btn-panel">
+                    <a href="mailto:shivamforsure20@gmail.com" className="inner-link">Email</a>
+                    <span className="inner-divider">/</span>
+                    <a href="https://www.linkedin.com/in/shivam-tiwari-b81820226/" target="_blank" rel="noopener noreferrer" className="inner-link">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </Magnetic>
+
+            <Magnetic>
+              <a href="https://drive.google.com/file/d/1-R-zheNuehM2tU87JG7qpgsrv-2hHfnA/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="contact-btn-secondary">
+                View Resume
+              </a>
+            </Magnetic>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+export default Contact;
