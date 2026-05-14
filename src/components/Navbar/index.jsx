@@ -28,18 +28,18 @@ function Navbar({ onHireClick }) {
     document.documentElement.classList.toggle("light-mode");
   };
 
-  const navItems = ["Work", "Services", "Contact"];
+  const navItems = [
+    { label: 'Work', id: 'experience' },
+    { label: 'Services', id: 'services' },
+    { label: 'Contact', id: 'contact' }
+  ]
 
   return (
-    <nav className={`navbar ${isHidden ? "navbar-hidden" : ""}`}>
+    <nav className={`navbar ${isHidden ? 'navbar-hidden' : ''}`}>
       <div className="navbar-left">
         <Magnetic>
           <div className="logo-container">
-            <img
-              src={profileImg}
-              alt="Shivam Tiwari"
-              className="nav-profile-img"
-            />
+            <img src={profileImg} alt="Shivam Tiwari" className="nav-profile-img" />
             <span className="logo">Shivam Tiwari</span>
           </div>
         </Magnetic>
@@ -47,9 +47,9 @@ function Navbar({ onHireClick }) {
 
       <div className="navbar-center">
         {navItems.map((item) => (
-          <Magnetic key={item}>
-            <a href={`#${item.toLowerCase()}`} className="nav-link">
-              {item}
+          <Magnetic key={item.label}>
+            <a href={`#${item.id}`} className="nav-link">
+              {item.label}
             </a>
           </Magnetic>
         ))}

@@ -24,6 +24,8 @@
   position: relative;
   width: 90%;
   max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
   background: #080808;
   border: 1px solid var(--border);
   border-radius: 24px;
@@ -175,4 +177,27 @@
 :root.light-mode .submit-btn {
   background: #000000;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .modal-content-wrapper {
+    padding: 1.5rem;
+    max-height: 95vh;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .modal-header {
+    margin-bottom: 1rem;
+  }
+  
+  .modal-form {
+    gap: 1rem;
+  }
+  
+  .textarea-wrapper textarea {
+    min-height: 80px;
+  }
 }

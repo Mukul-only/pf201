@@ -1,9 +1,9 @@
-import { motion, useMotionValue, useSpring, useTransform } from 'motion/react'
-import { useRef } from 'react'
-import Magnetic from '../Magnetic'
-import './ProjectCard.css'
+import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
+import { useRef } from "react";
+import Magnetic from "../Magnetic";
+import "./ProjectCard.css";
 
-function ProjectCard({ 
+function ProjectCard({
   number = "01",
   category = "EDTECH — K12 EDUCATION",
   year = "2026",
@@ -12,7 +12,7 @@ function ProjectCard({
   tags = "#EDTECH #GAMIFICATION #K12",
   image = "",
   legacy = false,
-  link = "#"
+  link = "#",
 }) {
   const ref = useRef(null);
 
@@ -49,28 +49,40 @@ function ProjectCard({
       opacity: 1,
       transition: {
         staggerChildren: 0.15,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const slideUpVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   const slideRightVariants = {
     hidden: { opacity: 0, x: -30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   const scaleUpVariants = {
     hidden: { opacity: 0, scale: 0.95 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="project-card"
       variants={containerVariants}
       initial="hidden"
@@ -78,7 +90,10 @@ function ProjectCard({
       viewport={{ once: true, margin: "-100px" }}
     >
       <div className="project-left">
-        <motion.div className="project-number-container" variants={slideRightVariants}>
+        <motion.div
+          className="project-number-container"
+          variants={slideRightVariants}
+        >
           <span className="project-number">{number}</span>
           <div className="project-line"></div>
         </motion.div>
@@ -88,8 +103,10 @@ function ProjectCard({
           <span className="badge badge-grey">{year}</span>
         </motion.div>
 
-        <motion.h3 className="project-title" variants={slideUpVariants}>{title}</motion.h3>
-        
+        <motion.h3 className="project-title" variants={slideUpVariants}>
+          {title}
+        </motion.h3>
+
         <motion.p className="project-description" variants={slideUpVariants}>
           {description}
         </motion.p>
@@ -100,10 +117,24 @@ function ProjectCard({
 
         <motion.div variants={slideUpVariants}>
           <Magnetic>
-            <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
-              <span>VIEW CASE STUDY</span>
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <span>VIEW PROJECT</span>
               <div className="project-link-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M7 17L17 7M7 7h10v10" />
                 </svg>
               </div>
@@ -113,7 +144,7 @@ function ProjectCard({
       </div>
 
       <motion.div className="project-right-wrapper" variants={scaleUpVariants}>
-        <motion.div 
+        <motion.div
           ref={ref}
           className="project-right"
           onMouseMove={handleMouseMove}
@@ -130,13 +161,11 @@ function ProjectCard({
               LEGACY STUDY
             </div>
           )}
-          {image && (
-            <img src={image} alt={title} className="project-image" />
-          )}
+          {image && <img src={image} alt={title} className="project-image" />}
         </motion.div>
       </motion.div>
     </motion.div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
