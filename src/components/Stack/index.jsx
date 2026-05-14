@@ -29,6 +29,7 @@ function Stack() {
     {
       name: "Figma",
       role: "Interface Design",
+      link: "https://www.figma.com/",
       icon: (
         <svg viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -54,6 +55,7 @@ function Stack() {
     {
       name: "Notion",
       role: "Productivity",
+      link: "https://www.notion.so/",
       icon: (
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -66,6 +68,7 @@ function Stack() {
     {
       name: "Framer",
       role: "No-code",
+      link: "https://www.framer.com/",
       icon: (
         <svg viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h14v7H7L0 0z" fill="currentColor"></path>
@@ -81,6 +84,7 @@ function Stack() {
     {
       name: "Slack",
       role: "Collaboration",
+      link: "https://slack.com/",
       icon: (
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -112,13 +116,13 @@ function Stack() {
           {tools.map((tool, index) => (
             <motion.div key={index} variants={itemVariants} style={{ display: 'flex', width: '100%' }}>
               <Magnetic style={{ width: '100%', height: '100%', display: 'flex' }}>
-                <div className="stack-card">
+                <a href={tool.link} target="_blank" rel="noopener noreferrer" className="stack-card" style={{ width: '100%', textDecoration: 'none' }}>
                   <div className="stack-icon">
                     {tool.icon}
                   </div>
                   <h3 className="stack-name">{tool.name}</h3>
                   <div className="stack-role">{tool.role}</div>
-                </div>
+                </a>
               </Magnetic>
             </motion.div>
           ))}

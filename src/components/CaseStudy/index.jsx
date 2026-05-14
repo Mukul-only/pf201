@@ -1,12 +1,14 @@
 import { motion } from "motion/react";
 import ProjectCard from "../ProjectCard";
-import "./CaseStudy.css";
+import "./LatestResearch.css";
 
+import udiseImg from "../../assets/udise-casestudy.png";
+import hclImg from "../../assets/hcl-casestudy.png";
 import shiftyImg from "../../assets/shifty.png";
 import rideonImg from "../../assets/Rideon.png";
 import rapidoImg from "../../assets/Rapido.png";
 
-function CaseStudy() {
+function LatestResearch() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,7 +41,7 @@ function CaseStudy() {
         viewport={{ once: true, margin: "-100px" }}
       >
         <motion.div className="experience-header" variants={itemVariants}>
-          <div className="experience-label">Case Studies</div>
+          <div className="experience-label">LATEST RESEARCH</div>
         </motion.div>
 
         <div className="experience-content">
@@ -61,6 +63,30 @@ function CaseStudy() {
 
         <ProjectCard
           number="01"
+          category="UDISE+"
+          year="2026"
+          title="UDISE+"
+          description="A unified analytics platform built on UDISE+data - covering 25 crore students, 1 crore teachers, and 14.7 lakh schools across every state and union territory."
+          tags="#GOVERNMENT #DEVELOPING #DESIGNING"
+          legacy={false}
+          image={udiseImg}
+          link="https://insights.udiseplus.gov.in/"
+        />
+
+        <ProjectCard
+          number="02"
+          category="HCL"
+          year="2025"
+          title="HCL"
+          description="Conversational AI streamlines requirement gathering by suggesting the most suitable RFP types. Smart analysis reviews documents intelligently."
+          tags="#B2C #INTERFACE #RESEARCH"
+          legacy={false}
+          image={hclImg}
+          link="https://www.figma.com/design/47olg6oyb8obQWJZwwOi10/HCL?node-id=0-1&t=oWxfkBaMkZubdjKY-1"
+        />
+
+        <ProjectCard
+          number="03"
           category="SHIFTY"
           year="2024"
           title="Shifty"
@@ -72,7 +98,7 @@ function CaseStudy() {
         />
 
         <ProjectCard
-          number="02"
+          number="04"
           category="RIDE ON"
           year="2023"
           title="Ride On"
@@ -84,7 +110,7 @@ function CaseStudy() {
         />
 
         <ProjectCard
-          number="03"
+          number="05"
           category="RAPIDO"
           year="2023"
           title="Rapido"
@@ -99,4 +125,4 @@ function CaseStudy() {
   );
 }
 
-export default CaseStudy;
+export default LatestResearch;

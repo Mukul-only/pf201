@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import "./Hero.css";
 import Magnetic from "../Magnetic";
-import profileImg from "../../assets/download.png";
 
 function Hero() {
   return (
@@ -15,21 +14,15 @@ function Hero() {
         >
           <Magnetic>
             <div className="capsule">
-              <img
-                src={profileImg}
-                alt="Shivam Tiwari"
-                className="capsule-img"
-              />
               <div className="capsule-text">
-                <span className="capsule-name-first">SHIVAM</span>
-                <span className="capsule-name-last">tiwari</span>
+                <span className="capsule-role">Lead Product Designer</span>
               </div>
             </div>
           </Magnetic>
         </motion.div>
 
         <h1 className="hero-title">
-          <motion.span 
+          <motion.span
             className="title-greeting"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -38,7 +31,7 @@ function Hero() {
             I engineer
           </motion.span>
           <br />
-          <motion.span 
+          <motion.span
             className="title-name"
             initial={{ scaleY: 0, opacity: 0 }}
             animate={{ scaleY: 1, opacity: 1 }}
@@ -47,7 +40,7 @@ function Hero() {
             ideas
           </motion.span>
           <br />
-          <motion.span 
+          <motion.span
             className="title-role"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -62,8 +55,8 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
-          Turning complexity into clarity — <br />
-          one pixel at a time.
+          I'm a product designer crafting intelligent systems and intuitive
+          experiences across Edtech, SaaS, MicroSaaS, Logistics, Goverment.
         </motion.p>
 
         <motion.div
@@ -88,7 +81,7 @@ function Hero() {
             </a>
           </Magnetic>
           <Magnetic>
-            <a href="#about" className="learn-btn">
+            <a href="#philosophy" className="learn-btn">
               <span>Learn More</span>
             </a>
           </Magnetic>

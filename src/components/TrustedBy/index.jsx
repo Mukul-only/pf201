@@ -26,14 +26,15 @@ function TrustedBy() {
   };
 
   const companies = [
-    "Maker Sharks",
-    "M5C Logistics",
-    "Right Choice AI",
-    "KOSMC",
-    "Dacoid Digital",
-    "SETC",
-    "Tirth",
-    "Ausoma",
+    { name: "Maker Sharks", link: "https://makersharks.ai/" },
+    { name: "M5C Logistics", link: "https://www.m5clogs.com/" },
+    { name: "RightChoiceAI", link: "https://rightchoice.ai/" },
+    { name: "KOSMC", link: "https://www.kosmc.ai/" },
+    { name: "Dacoid", link: "https://www.dacoid.com/" },
+    { name: "SETC", link: "https://www.setctaxreturn.com/" },
+    { name: "Tirth", link: "https://www.tirth.com/" },
+    { name: "Ausoma", link: "https://ausoma.org/" },
+    { name: "GrowthGear", link: "https://growthgear.in/" },
   ];
 
   return (
@@ -57,7 +58,9 @@ function TrustedBy() {
           {companies.map((company, index) => (
             <motion.div key={index} variants={itemVariants}>
               <Magnetic>
-                <div className="trusted-chip">{company}</div>
+                <a href={company.link} target="_blank" rel="noopener noreferrer" className="trusted-chip-link">
+                  <div className="trusted-chip">{company.name}</div>
+                </a>
               </Magnetic>
             </motion.div>
           ))}

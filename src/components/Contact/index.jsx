@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import Magnetic from "../Magnetic";
 import "./Contact.css";
 
-function Contact() {
+function Contact({ onHireClick }) {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -38,30 +38,21 @@ function Contact() {
 
           <div className="contact-actions">
             <Magnetic>
-              <div className="contact-btn-wrapper">
-                <div className="btn-slider">
-                  <div className="btn-panel">
-                    <span>Get in Touch</span>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <div className="btn-panel">
-                    <a href="mailto:shivamforsure20@gmail.com" className="inner-link">Email</a>
-                    <span className="inner-divider">/</span>
-                    <a href="https://www.linkedin.com/in/shivam-tiwari-b81820226/" target="_blank" rel="noopener noreferrer" className="inner-link">LinkedIn</a>
-                  </div>
-                </div>
-              </div>
+              <button className="contact-btn-primary" onClick={onHireClick}>
+                <span>Get in Touch</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
             </Magnetic>
 
             <Magnetic>

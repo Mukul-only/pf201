@@ -28,7 +28,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  padding: 0.5rem 1.25rem;
   background: var(--capsule-bg);
   border: 1px solid var(--border);
   border-radius: 100px;
@@ -57,6 +57,11 @@
 }
 
 .capsule-name-last {
+  color: #7b7f84;
+  font-weight: 500;
+}
+
+.capsule-role {
   color: #7b7f84;
   font-weight: 500;
 }

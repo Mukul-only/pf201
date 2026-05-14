@@ -27,25 +27,16 @@ function WorkExperience() {
 
   const jobs = [
     {
-      date: "May 2025 — Now",
+      date: "May 2025 — March 2026",
       title: "Product Designer",
-      company: "Growth Gear",
-      link: "https://prst144-sudo.github.io/Portfolio/#",
+      company: "GrowthGear",
+      link: "https://growthgear.in/",
       tags: ["MICRO SAAS", "AI", "GOVERNMENT"],
       description:
         "Owning end-to-end design across multiple products — from micro SaaS tools to government projects. Collaborating daily with developers through detailed design handoff and development briefs. Built Caudate AI, a proprietary software product, entirely from scratch.",
     },
     {
-      date: "2024",
-      title: "Product Designer",
-      company: "Maker Sharks",
-      link: "https://makersharks.ai/",
-      tags: ["AI", "SAAS", "B2B", "B2C"],
-      description:
-        "Designed wireframes and high-fidelity prototypes for FLO and the dashboard. Optimized SOPs and revamped the entire product process alongside PMs and developers.",
-    },
-    {
-      date: "2024",
+      date: "Sep 2024 - Jan 2025",
       title: "UI / UX Designer",
       company: "M5C Logistics",
       link: "https://www.m5clogs.com/",
@@ -54,7 +45,25 @@ function WorkExperience() {
         "Redesigned the website while preserving existing flow, developed components, and created both low and high-fidelity designs from comprehensive ground research.",
     },
     {
-      date: "2023",
+      date: "Aug 2024 - Oct 2024",
+      title: "Product Designer",
+      company: "Maker Sharks",
+      link: "https://makersharks.ai/",
+      tags: ["AI", "SAAS", "B2B", "B2C"],
+      description:
+        "Designed wireframes and high-fidelity prototypes for FLO and the dashboard. Optimized SOPs and revamped the entire product process alongside PMs and developers.",
+    },
+    {
+      date: "Feb 2024 - Oct 2024",
+      title: "User Experience Designer",
+      company: "Dacoid Digital",
+      link: "https://www.dacoid.com/",
+      tags: ["AI", "AUTOMATION", "B2B"],
+      description:
+        "Collaborated with multiple companies on UX/UI. Redesigned multiple sites and improved flows. Led SETC questionnaire redesign using user insights.",
+    },
+    {
+      date: "April 2023 - Jan 2024",
       title: "Project Designer",
       company: "Right Choice AI",
       link: "https://rightchoice.ai/",
@@ -63,22 +72,13 @@ function WorkExperience() {
         "Created a seamless business listing website — UI screens, site maps, and thorough research from scratch. Rephrased existing flows and led the design team.",
     },
     {
-      date: "2023",
+      date: "April 2023 - Jun 2023",
       title: "Project Designer",
       company: "KOSMC",
       link: "https://www.kosmc.ai/",
       tags: ["AI", "CREATORS", "B2B", "$100K RAISED"],
       description:
         "User flows and personas for different groups with minimal UI. Built a web app for creators to link all social handles. Collaborated with marketing and industry specialists.",
-    },
-    {
-      date: "2024",
-      title: "User Experience Designer",
-      company: "Dacoid Digital",
-      link: "https://www.dacoid.com/",
-      tags: ["AI", "AUTOMATION", "B2B"],
-      description:
-        "Collaborated with multiple companies on UX/UI. Redesigned multiple sites and improved flows. Led SETC questionnaire redesign using user insights.",
     },
   ];
 

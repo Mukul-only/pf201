@@ -1110,7 +1110,7 @@ function SplashCursor({
           background: '#4083F2',
           borderRadius: '50%',
           pointerEvents: 'none',
-          zIndex: 10000,
+          zIndex: 10005,
           transform: 'translate(-50%, -50%)',
           mixBlendMode: 'difference',
           transition: 'width 0.3s cubic-bezier(0.25, 1, 0.5, 1), height 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease'

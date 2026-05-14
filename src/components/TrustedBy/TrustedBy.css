@@ -54,6 +54,11 @@
   max-width: 1000px;
 }
 
+.trusted-chip-link {
+  text-decoration: none;
+  display: block;
+}
+
 .trusted-chip {
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -65,7 +70,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 100px;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-  cursor: default;
+  cursor: pointer;
 }
 
 :root.light-mode .trusted-chip {
