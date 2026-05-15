@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import Magnetic from "../Magnetic";
 import "./Contact.css";
 
@@ -56,9 +57,12 @@ function Contact({ onHireClick }) {
             </Magnetic>
 
             <Magnetic>
-              <a href="https://drive.google.com/file/d/1-R-zheNuehM2tU87JG7qpgsrv-2hHfnA/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="contact-btn-secondary">
-                View Resume
-              </a>
+              <Link
+                to="/cv"
+                className="contact-btn-secondary"
+              >
+                View CV
+              </Link>
             </Magnetic>
           </div>
         </motion.div>
