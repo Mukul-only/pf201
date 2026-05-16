@@ -323,6 +323,21 @@ const Page3 = ({ id }) => (
       </ul>
     </div>
 
+    <div className="cv-section-title" style={{ marginTop: "30px", marginBottom: "5px" }}>VOLUNTEERING & LEADERSHIP</div>
+    <hr style={{ border: "none", borderTop: "1.5px solid #000", margin: "0 0 15px 0" }} />
+
+    <div className="cv-job" style={{ paddingLeft: "0", marginBottom: "18px" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13.5px", marginBottom: "4px", color: "#000" }}>
+        <span><strong>Product Manager</strong> – Caudate AI</span>
+        <span style={{ fontStyle: "italic" }}>Jan 2026 | Gurgaon</span>
+      </div>
+      <ul className="cv-job-desc" style={{ marginLeft: "0", paddingLeft: "18px" }}>
+        <li>
+          Leading product strategy and cross-functional teams to refine AI-driven feature sets, ensuring seamless integration between technical capabilities and user-centric design outcomes.
+        </li>
+      </ul>
+    </div>
+
     <hr style={{ border: "none", borderTop: "1.5px solid #000", margin: "30px 0 0 0" }} />
     <div className="cv-section-title">Education</div>
 
