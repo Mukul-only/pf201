@@ -331,7 +331,7 @@ const Page3 = ({ id }) => (
         <span><strong>Product Manager</strong> – Caudate AI</span>
         <span style={{ fontStyle: "italic" }}>Jan 2026 | Gurgaon</span>
       </div>
-      <ul className="cv-job-desc" style={{ marginLeft: "0", paddingLeft: "18px" }}>
+      <ul className="cv-job-desc">
         <li>
           Leading product strategy and cross-functional teams to refine AI-driven feature sets, ensuring seamless integration between technical capabilities and user-centric design outcomes.
         </li>
