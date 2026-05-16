@@ -2,11 +2,11 @@ import { motion } from "motion/react";
 import ProjectCard from "../ProjectCard";
 import "./LatestResearch.css";
 
-import udiseImg from "../../assets/udise-casestudy.png";
-import hclImg from "../../assets/hcl-casestudy.png";
-import shiftyImg from "../../assets/shifty.png";
-import rideonImg from "../../assets/Rideon.png";
-import rapidoImg from "../../assets/Rapido.png";
+import udiseImg from "../../assets/udise-casestudy.webp";
+import hclImg from "../../assets/hcl-casestudy.webp";
+import shiftyImg from "../../assets/shifty.webp";
+import rideonImg from "../../assets/Rideon.webp";
+import rapidoImg from "../../assets/Rapido.webp";
 
 function LatestResearch() {
   const containerVariants = {
