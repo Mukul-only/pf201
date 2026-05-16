@@ -323,8 +323,8 @@ const Page3 = ({ id }) => (
       </ul>
     </div>
 
-    <div className="cv-section-title" style={{ marginTop: "30px", marginBottom: "5px" }}>VOLUNTEERING & LEADERSHIP</div>
-    <hr style={{ border: "none", borderTop: "1.5px solid #000", margin: "0 0 15px 0" }} />
+    <hr style={{ border: "none", borderTop: "1.5px solid #000", margin: "30px 0 0 0" }} />
+    <div className="cv-section-title">VOLUNTEERING & LEADERSHIP</div>
 
     <div className="cv-job" style={{ paddingLeft: "0", marginBottom: "18px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13.5px", marginBottom: "4px", color: "#000" }}>
