@@ -112,7 +112,7 @@ function Modal({ isOpen, onClose }) {
                   {/* Hidden field for Netlify spam filter */}
                   <input type="hidden" name="form-name" value="contact" />
                   <div hidden>
-                    <input name="bot-field" />
+                    <input name="bot-field" onChange={handleChange} value={formData["bot-field"]} />
                   </div>
 
                   <div className="form-group">
