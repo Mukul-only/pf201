@@ -51,11 +51,11 @@ function Philosophy() {
             </p>
             <p className="philosophy-description">
               Great design doesn't just solve problems - it compounds revenue.
-              I'm Shivam a Product Designer with 4 years of experience. I design
-              B2B, SaaS products, B2C, Logistics. I make powerful systems feel
-              simple, fast and practical, I am a problem solver. I collaborate
-              with AI tools to work 10x faster, I see AI as leverage, not a
-              competitor.
+              I'm Shivam, a Product Designer with 4 years of experience. I
+              design B2B, SaaS products, B2C, Logistics. I am a problem solver
+              and make powerful systems feel simple, fast and practical. I
+              collaborate with AI tools to work 10x faster, I see AI as
+              leverage, not a competitor.
             </p>
           </motion.div>
 
